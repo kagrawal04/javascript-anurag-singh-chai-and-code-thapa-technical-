@@ -1,0 +1,10 @@
+// var result = 0.1 + 0.2;
+// console.log(result.toFixed(1));
+// console.log(5*2 == "10");
+// console.log(5 != 5);
+// var score = 5;
+// var result = score >= 60 ? "PASS" : "FAIL";
+// console.log(result);
+console.log("5" - 3);
+console.log(2 < 12 < 5);
+console.log("20" + (10 + 10));

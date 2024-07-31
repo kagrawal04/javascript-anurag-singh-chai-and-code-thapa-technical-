@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    padding: 32px 48px;
+    margin: 0;
+}
+.heading{
+    font-size: 64px;
+    color: #48A300;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.heading span{
+    color: #61481c;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Poppins" , cursive;
+}
+main{
+    padding: 0 16px 32px;
+}
+.app-container{
+    background-color: #fceded;
+    margin-inline: auto;
+    max-width: 660px;
+    border-radius: 20px;
+    padding: 32px 48px ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(190, 150, 200, 0.2) 0px 6px 6px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.sun-image{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.progress-label{
+    font-weight: 400;
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 20px;
+    /* line-height: 21px; */
+}
+.progress-bar{
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(72, 163, 0, 0.102);
+    margin-bottom: 42px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.progress-value{
+    height: 100%;
+    border-radius: 15px;
+    /*background-color: #48a300;
+    */width: 600;
+    font-weight: 500;
+    font-size: 20;
+    background-color: #48A300;
+    color: #fceded;
+    display: flex;
+    align-items: center;
+    /*padding-left: 20px;
+    */overflow: hidden;
+    transition: width 0.9s ease-in-out;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: width 0.9s ease-in-out;
+    -moz-transition: width 0.9s ease-in-out;
+    -ms-transition: width 0.9s ease-in-out;
+    -o-transition: width 0.9s ease-in-out;
+}
+.progress-value span{
+    padding-left: 20px;
+    min-width: max-content;
+}
+.error-label{
+    color: #FF5151;
+    font-size: 16px;
+    font-family: "Poppins" , cursive;
+    margin-top: none;
+    display: none;
+}
+.show-error .error-label{
+    display: block;
+}
+.goal-container{
+    padding: 0px 22px;
+    border-radius: 17px;
+    /*border: 0px dotted #858585;
+    */-webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    height: 82px;
+    -webkit-border-radius: 17px;
+    background-color: #ffffff;
+    font-family: inherit;
+    margin-bottom: 42px;
+}
+
+.custom-checkbox{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /*outline: none;*/
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.goal-input{
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-family: inherit;
+    font-size: 16px;
+    align-self: stretch;
+    width: 100%;
+    font-weight: 500;
+    /* display: none; */
+}
+.goal-input::placeholder{
+    color: #d9d9d9;
+}
+.check-icon{
+    display: none;
+    width: 18px;
+    height: 18px;
+}
+.completed .custom-checkbox{
+    background: #48A300;
+    border-color: #48A300;
+}
+.completed .check-icon{
+    display: block;
+}
+.completed .goal-input{
+    color: #48A300;
+    text-decoration-line: line-through;
+    -moz-text-decoration-line: line-through;
+}
+.footer-heading{
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    /* margin-top: 75px; */
+    font-weight: 700;
+    text-align: center;
+    /* color: #858585; */
+}
+.footer-para{
+    margin-top: 64px;
+    /* margin-bottom: 35px; */
+    font-weight: 500;
+    text-align: center;
+    font-size: 10px;
+    color: #858585;
+}
+@media (max-width : 768px) {
+    .heading{
+        font-size: 25px;
+    }
+    .app-container{
+        padding: 16px 32px;
+    }
+    .goal-container{
+        height: 64px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+    .custom-checkbox{
+        height: 18px;
+        width: 18px;
+    }
+    .footer-para{
+        margin-top: 32px;
+    }
+    .progress-bar{
+        height: 24px;
+    }
+}

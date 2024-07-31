@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+            background-color: black;
+        }
+        .inputValue,
+        .inputType,
+        .eventType{
+            color: #f5ee62;
+        }
+        .inputName{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <section>
+            <input type="text" id="myInput" name="username" placeholder="Type Something..." autocomplete="off"/>
+            <div class="output">
+                <p class="inputValue">Input Value: </p>
+                <p class="inputName">Input Name: </p>
+                <p class="inputType">Input Type: </p>
+                <p class="eventType">Event Type: </p>
+            </div>
+    </section>
+</body>
+<script>
+    const inputElem = document.getElementById("myInput");
+    const handleInput = (e)=>{
+        console.log(e);
+        console.log("Input Value: " , e.target.value);
+        console.log("Input Value: " , e.target.name);
+        console.log("Input Value: " , e.inputType);
+        console.log("Input Value: " , e.type);
+
+        document.querySelector(".inputValue").textContent = `Key Pressed: ${e.target.value}`;
+        document.querySelector(".inputName").textContent = `Key Pressed: ${e.target.name}`;
+        document.querySelector(".inputType").textContent = `Key Pressed: ${e.inputType}`;
+        document.querySelector(".eventType").textContent = `Key Pressed: ${e.type}`; 
+    };
+    //inputElem.addEventListener('input' , handleInput);
+    inputElem.addEventListener('change' , handleInput)
+</script>
+</html>

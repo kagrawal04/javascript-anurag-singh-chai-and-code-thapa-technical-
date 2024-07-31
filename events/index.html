@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            margin-bottom: 2.4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== Start Section ========== -->
+    <h1>Inline Event</h1>
+    <button onclick="alert('💀💀💀KHATRA💀💀💀')">greeting</button>
+    <button ondblclick="alert('AAIEGA TOH MAREGA🗡🗡🗡🩸🩸🩸')">greeting again</button>
+    <button onmouseover="alert('😡😡GYA NHI TU😡😡')">greeting</button>
+
+    <!-- ========== End Section ========== -->
+    
+    <!-- ========== Start DOM EVENT Section ========== -->
+    <h1>Dom Event handler</h1>
+    <button id="myBtn">greeting</button>
+    <button id="myBtn1">greeting again</button>
+    <!-- ========== End DOM EVENT Section ========== -->
+    
+    <!-- ========== Start addEventListenerEvent HandlerSection ========== -->
+    <h1>addEventListener Event Handler</h1>
+    <button id="myBtn2">greeting</button>
+    <button id="myBtn3">greeting again</button>
+    <!-- ========== End addEventListenerEvent HandlerSection ========== -->
+    
+    <script>
+        document.getElementById("myBtn").onclick = ()=>{
+            alert('AAB TOH TU GYA 🏃‍♀️🏃‍♀️🏃‍♀️')
+        };
+
+        //<!-- WE CAN ALSO WRITE THE ABOVE CODE AS -->
+        //document.getElementById("myBtn").onclick = function(){
+        //    alert('AAB TOH TU GYA 🏃‍♀️🏃‍♀️🏃‍♀️')
+        //};
+        document.getElementById("myBtn1").onmouseover = () =>{
+            alert('JINDA NAHI BACEHGA TU');
+        };
+
+        // addEventListener
+        //document.getElementById("myBtn2").addEventListener('click',function(){
+          //  alert('MAARO SAALE KOO');
+        //});
+
+        //<!-- WE CAN ALSO WRITE THE ABOVE CODE AS -->
+        document.getElementById("myBtn2").addEventListener('click', () => {
+            alert('MAARO SAALE KOO');
+        });
+
+        //document.getElementById("mtBtn3").addEventListener('mouseover', function () {
+          //  alert("MAAR GYA 🩸");
+        //});
+        document.getElementById("myBtn3").addEventListener('mouseover', () => {
+            alert('MAAR GYA 🩸');
+        });
+
+    </script>
+</body>
+</html>
